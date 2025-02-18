@@ -3,6 +3,7 @@ const cuid = require('cuid')
 
 const db = require('./db')
 
+
 const Order = db.model('Order', {
   _id: { type: String, default: cuid },
   buyerEmail: { type: String, required: true },
